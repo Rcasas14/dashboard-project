@@ -1,1 +1,79 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+a,
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (min-width: 64em) {
+  .container {
+    padding: 0 250px;
+  }
+}
+@media (max-width: 63.9375em) {
+  .container {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 39.9375em) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (max-width: 39.9375em) {
+  .hide-for-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 40em) {
+  .hide-for-tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none !important;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-kumbh-sans {
+  font-family: "Kumbh Sans", sans-serif;
+}/*# sourceMappingURL=style.css.map */
