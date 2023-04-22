@@ -1,3 +1,28 @@
-.login{
-    
+.login {
+    .login-wrapper {
+        top: 50%;
+        left: 0;
+        transform: translate(40%, -50%);
+
+        .title {
+            padding: 5px 0;
+        }
+
+        input[type='text']{
+            margin: 1rem 0;
+        }
+
+        input{
+            border-radius: 10px;
+        }
+
+        .btn-cta {
+            width: 142px;
+            margin: 1rem 0;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
 }
