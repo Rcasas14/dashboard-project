@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -76,4 +76,26 @@ ul {
 
 .font-kumbh-sans {
   font-family: "Kumbh Sans", sans-serif;
+}
+
+.login .login-wrapper {
+  top: 50%;
+  left: 0;
+  transform: translate(40%, -50%);
+}
+.login .login-wrapper .title {
+  padding: 5px 0;
+}
+.login .login-wrapper input[type=text] {
+  margin: 1rem 0;
+}
+.login .login-wrapper input {
+  border-radius: 10px;
+}
+.login .login-wrapper .btn-cta {
+  width: 142px;
+  margin: 1rem 0;
+}
+.login .login-wrapper .btn-cta a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

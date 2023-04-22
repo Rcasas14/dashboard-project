@@ -8,26 +8,30 @@
     <link rel="stylesheet" href="../app/output.css">
     <link rel="stylesheet" href="../app/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <title>Dashboard-Project</title>
 </head>
 
 <body>
     <main class="login">
-        <div class="login-wrapper">
-            <h1 class="title">Log in</h1>
-            <a href="#" class="signup">Sign up</a>
-            <input type="text" name="user-email" placeholder="Email">
-            <input type="password" name="user-password" placeholder="Password">
-            <a href="#" class="btn-cta">Login</a>
+        <div class="login-wrapper absolute flex flex-col w-96">
+            <h1 class="title font-bold text-5xl">Log in</h1>
+            <a href="#" class="signup font-semibold">Sign up</a>
+            <input class="w-96" type="text" name="user-email" placeholder="Email">
+            <input class="w-96" type="password" name="user-password" placeholder="Password">
+            <button type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 self-center btn-cta"><a
+                    href="#">Login</a></button></button>
             <div class="error-handling d-none">
                 <p>Error-here</p>
             </div>
         </div>
 
+        
+
     </main>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="index.js"></script>
 </body>
 
