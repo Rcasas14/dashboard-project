@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../app/output.css">
+    <link rel="stylesheet" href="../app/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <title>Todo-List</title>
+</head>
+
+<body class="body">
+    <main class="todo container flex">
+        <div class="todo-wrapper bg-white flex flex-col rounded">
+            <h1 class="title text-lg font-semibold ">Todo-list</h1>
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+            <textarea id="item-textarea" rows="2"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Write an Item"></textarea>
+            <button type="submit"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 self-center item-btn">Add
+                Item</button>
+                <ul class="max-w-md space-y-1 text-black-500 list-none list-inside dark:text-black-400 item-list">
+
+                </ul>
+            <!-- <div class="flex items-center mb-4">
+                <input id="default-checkbox" type="checkbox" value=""
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="ml-2 text-sm font-medium text-black-900 dark:text-black-300">Sample Item</label>
+            </div> -->
+            
+        </div>
+
+
+    </main>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
