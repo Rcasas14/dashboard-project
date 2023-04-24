@@ -2,20 +2,26 @@
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    
+
     .todo-wrapper {
         position: relative;
         max-width: 100%;
         width: 800px;
         height: auto;
-        padding: 30px;        
-    
+        padding: 30px;
+
 
         .item-btn {
             align-self: flex-end;
             margin: 20px 0;
 
         }
-        
+
+        .text-item-done {
+            text-decoration: line-through;
+            text-decoration-thickness: 1.5px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
     }
 }

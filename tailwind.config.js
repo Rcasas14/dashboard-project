@@ -1,11 +1,7 @@
-module.exports = {
-
-  content: [
-    "./node_modules/flowbite/**/*.js"
-  ],
-  plugins: [
-    require('flowbite/plugin')
-  ],
-  darkMode: 'class',
-
-}
+export const content = [
+  "./node_modules/flowbite/**/*.js"
+];
+export const plugins = [
+  require('flowbite/plugin')
+];
+export const darkMode = 'class';

@@ -123,4 +123,9 @@ ul {
 .todo .todo-wrapper .item-btn {
   align-self: flex-end;
   margin: 20px 0;
+}
+.todo .todo-wrapper .text-item-done {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=style.css.map */
