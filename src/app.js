@@ -11,7 +11,12 @@ ItemBtn.addEventListener("click", () => {
 
     let itemList = document.createElement("li")
     let itemDiv = document.createElement("div");
-    itemDiv.classList.add("flex", "items-center", "mb-4");
+    let itemWrapper = document.createElement("div")
+    let rmvIcon = document.createElement("div")
+
+    itemWrapper.classList.add("item-wrapper")
+    itemDiv.classList.add("flex", "items-center", "mb-4", "justify-between");
+    rmvIcon.classList.add("x-icon")
 
     let itemInput = document.createElement("input");
     itemInput.setAttribute("type", "checkbox");
@@ -42,9 +47,16 @@ ItemBtn.addEventListener("click", () => {
       "text-black-900",
       "dark:text-black-300"
     );
+    rmvIcon.innerHTML = `<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+</svg>`
     itemLabel.innerText = `${itemValue.value}`;
-    itemDiv.appendChild(itemInput);
-    itemDiv.appendChild(itemLabel);
+    itemDiv.appendChild(itemWrapper)
+    itemWrapper.appendChild(itemInput);
+    itemWrapper.appendChild(itemLabel);
+
+    itemDiv.appendChild(rmvIcon)
     itemList.appendChild(itemDiv)
 
     console.log(itemUl.hasChildNodes())
@@ -56,11 +68,11 @@ ItemBtn.addEventListener("click", () => {
       if (checkItem.checked) {
         console.log("Checkbox is checked");
         itemLabel.classList.add("text-item-done")
-        
-      } else if(itemLabel.classList.contains("text-item-done")){
+
+      } else if (itemLabel.classList.contains("text-item-done")) {
         console.log("Checkbox is not checked");
         itemLabel.classList.remove("text-item-done")
-        
+
       }
     });
 
