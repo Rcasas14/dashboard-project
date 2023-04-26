@@ -1464,6 +1464,10 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* build the css tailwind */
+
+/* npx tailwindcss -i ./src/input.css -o ./app/output.css --watch */
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));

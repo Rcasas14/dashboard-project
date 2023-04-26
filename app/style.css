@@ -14,6 +14,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
+  background-color: #4C5F6B;
 }
 
 a,
@@ -26,7 +27,7 @@ ul {
 
 @media (min-width: 64em) {
   .container {
-    padding: 0 250px;
+    padding: 0 150px;
   }
 }
 @media (max-width: 63.9375em) {
@@ -98,4 +99,40 @@ ul {
 }
 .login .login-wrapper .btn-cta a {
   color: #fff;
+}
+
+.dashboard .dashboard-wrapper {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0;
+}
+
+.todo {
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.todo .todo-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  padding: 30px;
+}
+.todo .todo-wrapper .item-btn {
+  align-self: flex-end;
+  margin: 20px 0;
+}
+.todo .todo-wrapper .text-item-done {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.todo .todo-wrapper svg {
+  color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 16px;
+  cursor: pointer;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
