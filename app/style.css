@@ -135,4 +135,20 @@ ul {
   width: 16px;
   cursor: pointer;
   text-align: right;
+}
+
+.back-prev-page {
+  top: 25px;
+  left: 15px;
+}
+.back-prev-page .wrapper {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.back-prev-page .wrapper svg {
+  height: 100%;
+  width: 24px;
+  cursor: pointer;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
