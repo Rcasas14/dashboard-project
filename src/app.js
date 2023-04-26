@@ -16,7 +16,8 @@ ItemBtn.addEventListener("click", () => {
 
     itemWrapper.classList.add("item-wrapper")
     itemDiv.classList.add("flex", "items-center", "mb-4", "justify-between");
-    rmvIcon.classList.add("x-icon")
+    rmvIcon.classList.add("x-icon");
+    rmvIcon.setAttribute("id", "delete-item");
 
     let itemInput = document.createElement("input");
     itemInput.setAttribute("type", "checkbox");
@@ -75,6 +76,12 @@ ItemBtn.addEventListener("click", () => {
 
       }
     });
+
+    itemValue.value = "";
+
+    rmvIcon.addEventListener('click', ()=>{
+      itemList.remove()
+    })
 
   }
 
