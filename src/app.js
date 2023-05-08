@@ -16,7 +16,6 @@ ItemBtn.addEventListener("click", () => {
     itemDiv.classList.add("flex", "items-center", "mb-4", "justify-between");
     rmvIcon.classList.add("x-icon");
     rmvIcon.setAttribute("id", "delete-item");
-
     let itemInput = document.createElement("input");
     itemInput.setAttribute("type", "checkbox");
     itemInput.setAttribute("id", "default-checkbox");
