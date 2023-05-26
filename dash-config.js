@@ -8,11 +8,15 @@ const app = express();
 const PORT = process.env.PORT
 
 app.use(morgan('tiny'));
-//app.use(express.static(path.join(__dirname, '/src/')));
+app.use(express.static(path.join(__dirname, '/public/')));
+
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
 
 
 app.get('/', (req, res) => {
-    res.send('WEB PAGE NOT FOUND ERROR 404')
+    res.render('index');
 })
 
 app.listen(PORT, () => {
