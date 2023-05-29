@@ -1,0 +1,33 @@
+.register {
+    .register-wrapper {
+        //top: 50%;
+        //left: 0;
+        //transform: translate(50%, -50%);
+
+        margin-top: 100px;
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .title {
+            padding: 5px 0;
+        }
+
+        input {
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .btn-cta {
+            width: 142px;
+            margin: 1rem 0;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

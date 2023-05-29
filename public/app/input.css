@@ -4,4 +4,4 @@
 
 
 /* build the css tailwind */
-/* npx tailwindcss -i ./src/input.css -o ./app/output.css --watch */
+/* npx tailwindcss -i ./public/app/input.css -o ./public/app/output.css --watch */
