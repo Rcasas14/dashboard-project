@@ -9,9 +9,12 @@ const app = express();
 const PORT = process.env.PORT
 const indexRouter = require('./src/routes/indexRouter');
 const registerPageRouter = require('./src/routes/registerPageRouter');
+const authRouter = require('./src/routes/authRouter')
 
 app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, '/public/')));
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
@@ -19,6 +22,7 @@ app.set('view engine', 'ejs');
 
 app.use('/index', indexRouter);
 app.use('/registerPage', registerPageRouter);
+app.use('/auth', authRouter);
 
 app.get('/', (req, res) => {
     res.render('login');
