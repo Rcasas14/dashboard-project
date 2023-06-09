@@ -151,4 +151,26 @@ ul {
   width: 24px;
   cursor: pointer;
   color: #fff;
+}
+
+.register .register-wrapper {
+  margin-top: 100px;
+}
+.register .register-wrapper .register-form {
+  display: flex;
+  flex-direction: column;
+}
+.register .register-wrapper .title {
+  padding: 5px 0;
+}
+.register .register-wrapper input {
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.register .register-wrapper .btn-cta {
+  width: 142px;
+  margin: 1rem 0;
+}
+.register .register-wrapper .btn-cta a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

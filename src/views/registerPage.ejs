@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../app/output.css">
+    <link rel="stylesheet" href="../app/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard-Project</title>
+</head>
+
+<body>
+    <main class="register ">
+        <div class="register-wrapper flex justify-center items-center">
+            <form name="" action="" class="register-form" method="post">
+                <h1 class="title text-white font-bold text-5xl" required>Sign Up</h1>
+                <div class="personal-info flex flex-col">
+                    <input class="w-96" type="text" name="firstname" placeholder="First name">
+                    <input class="w-96" type="text" name="lastname" placeholder="Last name">
+                </div>
+                <div class="user-credentials flex flex-col">
+                    <input class="w-96" type="text" name="user-email" placeholder="Email">
+                    <input class="w-96" type="password" name="user-password" placeholder="Password">
+                    <input class="w-96" type="password" name="user-password" placeholder="Confirm Password">
+                </div>
+                <input type="submit"
+                    class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 self-center cursor-pointer btn-cta">
+                <a href="#" value="Sign up" placeholder="Sign Up"></a></input>
+                <p class="text-base text-center text-white">Already have an account? <a href="/" class="font-semibold">Sign in</a></p>
+                <!-- temporary link -->
+                <div class="error-handling d-none">
+                    <p>Error-here</p>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="../../js/flowbite.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../app/output.css">
+    <link rel="stylesheet" href="../app/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard-Project</title>
+</head>
+
+<body>
+    <main class="login">
+        <div class="login-wrapper absolute flex flex-col w-96">
+            <form name="signup" action="/auth/signUp" method="post">
+                <h1 class="title text-white font-bold text-5xl" required>Log in</h1>
+                <a href="registerPage" class="text-white signup text-white-600 font-semibold" required>Sign up</a>
+                <input class="w-96" type="text" name="username" id="username" placeholder="username">
+                <input class="w-96" type="password" name="password" id="password" placeholder="Password">
+                <input type="submit" class="text-white bg-gray-800 hover:bg-gray-900 
+                    focus:outline-none focus:ring-4 focus:ring-gray-300 
+                    font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 
+                    dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 
+                    dark:border-gray-700 self-center cursor-pointer btn-cta"></input>
+                <!-- temporary link -->
+                <div class="error-handling d-none">
+                    <p>Error-here</p>
+                </div>
+            </form>
+        </div>
+
+
+
+    </main>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="../../js/flowbite.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

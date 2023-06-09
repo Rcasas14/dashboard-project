@@ -24,3 +24,4 @@ const modalOptions = {
 const modal = new Modal($modalElement, modalOptions);
 
 modal.show();
+
