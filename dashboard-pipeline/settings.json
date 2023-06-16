@@ -1,0 +1,18 @@
+{
+    "jenkins-runner.jobs": {
+      "dashboard-app": {
+        "runWith": "pipelines-8080",
+        "name": "dashboard-app",
+        "isDefault": true
+      }
+    },
+    "jenkins-runner.hostConfigs": {
+      "pipelines-8080": {
+        "url": "http://localhost:8080/",
+        "user": "rcasas-admin",
+        "password": "03290329",
+        "useCrumbIssuer": true
+      }
+    }
+  }
+  
